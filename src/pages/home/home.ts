@@ -7,12 +7,9 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  providers: [Camera]
 })
-
-providers: [
-  Camera
-]
 
 export class HomePage {
   public base64Image: string;
